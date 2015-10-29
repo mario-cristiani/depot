@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+// http://stackoverflow.com/questions/24819381/application-js-cant-find-jquery-ui-effect-blind
+//= require jquery-ui/effect-blind
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
