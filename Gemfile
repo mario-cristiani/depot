@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 # =>JQuery UI Library
 gem 'jquery-ui-rails'
+# bootstrap for css and js out of the box
+gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git', :branch => 'master'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
