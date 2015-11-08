@@ -15,4 +15,11 @@
 // require jquery-ui.effect-blind
 //= require jquery_ujs
 //= require turbolinks
+//= require flipclock.min
 //= require_tree .
+
+var clock = $('.your-clock').FlipClock({
+	clockFace: 'TwelveHourClock'
+});
+
+$('#your-clock').html("<%= escape_javascript clock %>");
