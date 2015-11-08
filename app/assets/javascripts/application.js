@@ -14,6 +14,7 @@
 // http://stackoverflow.com/questions/24819381/application-js-cant-find-jquery-ui-effect-blind
 // require jquery-ui.effect-blind
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require turbolinks
 //= require flipclock.min
 //= require_tree .
