@@ -18,8 +18,4 @@
 //= require flipclock.min
 //= require_tree .
 
-var clock = $('.your-clock').FlipClock({
-	clockFace: 'TwelveHourClock'
-});
 
-$('#your-clock').html("<%= escape_javascript clock %>");

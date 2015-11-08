@@ -1,0 +1,2 @@
+jQuery ->
+clock = $('.clock').FlipClock()
