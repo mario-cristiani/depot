@@ -62,4 +62,11 @@ class ProductTest < ActiveSupport::TestCase
                  product.errors[:title]
   end
   
+  test "product is valid with unique title" do
+    product = Product.new(title:       "Your Book Title",
+                          description: "yyy",
+                          price:       1,
+                          image_url:   "zzz.jpg")
+    assert product.valid?
+  end
 end
