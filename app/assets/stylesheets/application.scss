@@ -50,7 +50,7 @@
 //#START:side
   #side {
     float: left;
-    padding: 1em 2em;
+    padding: 1em 1em;
     width: 13em;
     background: #141;
 
@@ -89,6 +89,10 @@
     }
   }
 //#END:side
+}
+
+.clock{
+  zoom: 0.28;
 }
 
 //#START:form

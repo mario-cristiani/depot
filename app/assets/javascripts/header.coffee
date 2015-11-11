@@ -1,2 +1,2 @@
 jQuery ->
-  clock = $('.clock').FlipClock()
+  clock = $('.clock').FlipClock(clockFace: 'TwelveHourClock')

@@ -31,9 +31,12 @@
         <li><a href="http://www..../news">News</a></li>
         <li><a href="http://www..../contact">Contact</a></li>
       </ul>
+    <div class="clock"></div>
+      <div id="cart">
+        <%= Time.now.asctime %>
+      </div>
     </div>
     <div id="main">
-      <div class="clock" style="margin-bottom: 20px;"></div>
       <%= yield %>
     </div>
   </div>

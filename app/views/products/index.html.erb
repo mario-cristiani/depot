@@ -21,7 +21,7 @@
         <td><%= product.title %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
-        <td><%= product.price %></td>
+        <td><%= number_to_currency(product.price, precision: 0)   %></td>
         <td><%=l product.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

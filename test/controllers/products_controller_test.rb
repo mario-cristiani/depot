@@ -15,11 +15,13 @@ class ProductsControllerTest < ActionController::TestCase
     get :index
     assert_response :success
     assert_not_nil assigns(:products)
+    assert_select "body div.clock"
   end
 
   test "should get new" do
     get :new
     assert_response :success
+    assert_select "form input", 6
   end
 
   test "should create product" do
