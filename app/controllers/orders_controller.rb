@@ -20,7 +20,7 @@ class OrdersController < ApplicationController
       redirect_to store_url, notice: "Your cart is empty"
       return
     end
-  
+
     @order = Order.new
   end
 
@@ -32,12 +32,13 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(order_params)
+    @order.add_line_items_from_cart(@cart)
 
     respond_to do |format|
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        
+
         format.html { redirect_to store_url, notice:
           'Thank you for your order.' }
         # format.html { redirect_to @order, notice: 'Order was successfully created.' }
@@ -81,6 +82,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:name, :address, :email, :pay_type)
+      params.require(:order).permit(:name, :address, :email, :payment_type_id)
     end
 end

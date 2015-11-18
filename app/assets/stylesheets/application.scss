@@ -42,7 +42,7 @@
   background: #141;
 
   #main {
-    margin-left: 17em;
+    margin-left: 21em;
     padding: 1em;
     background: white;
   }
@@ -51,7 +51,7 @@
   #side {
     float: left;
     padding: 1em 1em;
-    width: 20em;
+    width: 21em;
     background: #141;
 
 /* START_HIGHLIGHT */
@@ -66,6 +66,8 @@
     #cart {
       font-size: smaller;
       color:     white;
+      display: block;
+      margin-bottom: 30px;
 
       table {
         border-top:    1px dotted #595;

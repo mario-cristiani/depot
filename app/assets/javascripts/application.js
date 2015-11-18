@@ -12,7 +12,7 @@
 //
 //= require jquery
 // http://stackoverflow.com/questions/24819381/application-js-cant-find-jquery-ui-effect-blind
-// require jquery-ui.effect-blind
+// require jquery-ui.all
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
